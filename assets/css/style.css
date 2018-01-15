@@ -1,0 +1,46 @@
+body {
+	background-color: grey;
+}
+.completed {
+	color:gray;
+	text-decoration: line-through;
+	
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+#container {
+	border: 1px solid black;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	text-align: center;
+	background-color: #7EC0EE;
+	width: 50%;
+	height: auto;
+}
+
+input {
+	width: 80%;
+}
+
+::placeholder {
+	color: black;
+	background-color: grey;
+	border: none;
+}
+
+li {
+		list-style: armenian;
+		text-align: left;
+		padding: 1%;
+}
+
+li:hover {
+	background-color: yellow;
+}
