@@ -31,7 +31,7 @@ $('#newTask').keypress(function(event){
 
 
 //deleting task
-$('ul').on('click', 'span', function(){
+$('ul').on('click', 'span', function(event){
 	//remove list item from dom
 	$(this).parent().fadeOut(500, function() {
 		$(this).remove();
@@ -42,4 +42,5 @@ $('ul').on('click', 'span', function(){
 	$.post('delete.php', {id:$(this).parent().attr('id')}, function(data,status){
 		console.log(data);
 	});
+	event.stopPropagation();
 });
